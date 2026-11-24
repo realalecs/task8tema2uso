@@ -2,4 +2,8 @@
 
 limbaj=$1
 
-gcc zar.c -o zar && ./zar
+if [ limbaj == "c" ]; then
+        gcc zar.c -o zar && ./zar
+elif [ limbaj == "py" ]; then
+        python zar.py
+fi
